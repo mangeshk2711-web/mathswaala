@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Mathswaala | Best Coaching for SSC, CBSE, ICSE in Mumbai & Thane</title>
+    <meta name="description" content="Mathswaala offers expert coaching for 7th to 10th-grade students across SSC, CBSE, and ICSE boards. 16+ years of excellence with 15+ branches in Mumbai and Thane.">
+    <meta name="keywords" content="Mathswaala, Math coaching, tuition classes in Mumbai, tuition classes in Thane, SSC coaching, CBSE coaching, ICSE coaching, school of fundamentals, best tutors for 10th standard">
+    <meta name="author" content="Mathswaala">
+    <link rel="canonical" href="https://mathswaala.com">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mathswaala.com">
+    <meta property="og:title" content="Mathswaala | School of Fundamentals">
+    <meta property="og:description" content="Empowering students with expert faculty and personalized attention. Join Mathswaala for the best coaching in SSC, CBSE, and ICSE.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=1200">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://mathswaala.com">
+    <meta property="twitter:title" content="Mathswaala | School of Fundamentals">
+    <meta property="twitter:description" content="Expert coaching for 7th-10th Std across Mumbai and Thane. Join Mathswaala for academic success.">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=1200">
+
+    <!-- Schema.org JSON-LD for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Mathswaala",
+      "url": "https://mathswaala.com",
+      "logo": "https://mathswaala.com/logo.png",
+      "description": "Premier coaching institute for 7th to 10th standard students specializing in SSC, CBSE, and ICSE boards.",
+      "foundingDate": "2010",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1st Floor, Akshay Building, Old Mumbai-Pune Road",
+        "addressLocality": "Kalwa, Thane",
+        "postalCode": "400605",
+        "addressCountry": "IN"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91-98709-56710",
+        "contactType": "admissions",
+        "email": "connect@mathswaala.com"
+      },
+      "sameAs": [
+        "https://www.facebook.com/mathswaala",
+        "https://www.instagram.com/mathswaala"
+      ]
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        /* Updated Hero Section with Background Image */
+        .hero-section {
+            position: relative;
+            background-image: url('https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Parallax effect */
+        }
+
+        .hero-overlay {
+            background: linear-gradient(to right, rgba(0, 32, 91, 0.9), rgba(0, 32, 91, 0.7));
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .nav-link::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #facc15;
+            transition: width .3s;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .branch-card {
+            border-left: 4px solid #1e3a8a;
+        }
+
+        .gallery-item {
+            transition: all 0.4s ease-in-out;
+        }
+        .gallery-item.hidden-item {
+            display: none;
+            opacity: 0;
+            transform: scale(0.8);
+        }
+
+        .filter-btn.active {
+            background-color: #1e3a8a;
+            color: white;
+            border-color: #1e3a8a;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Top Bar -->
+    <div class="bg-blue-900 text-white py-2 px-4 text-sm hidden md:block">
+        <div class="container mx-auto flex justify-between items-center">
+            <address class="flex gap-4 not-italic">
+                <span><i class="fas fa-phone-alt mr-2 text-yellow-400" aria-hidden="true"></i> <a href="tel:+919870956710">+91 98709 56710</a></span>
+                <span><i class="fas fa-envelope mr-2 text-yellow-400" aria-hidden="true"></i> <a href="mailto:connect@mathswaala.com">connect@mathswaala.com</a></span>
+            </address>
+            <div class="flex gap-4">
+                <a href="#" class="hover:text-yellow-400" aria-label="Visit our Facebook page"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="hover:text-yellow-400" aria-label="Visit our Instagram profile"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-yellow-400" aria-label="Subscribe to our Youtube channel"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <a href="/" class="text-3xl font-bold text-blue-900 flex items-center" aria-label="Mathswaala Home">
+                    <span class="bg-blue-900 text-white p-1 rounded mr-1">M</span>ATHSWAALA
+                </a>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex gap-6 items-center font-medium">
+                <a href="#home" class="nav-link text-blue-900">Home</a>
+                <a href="#about" class="nav-link">About Us</a>
+                <div class="relative group cursor-pointer">
+                    <button class="nav-link flex items-center" aria-haspopup="true">Boards <i class="fas fa-chevron-down text-xs ml-1"></i></button>
+                    <div class="absolute top-full left-0 bg-white shadow-xl rounded-b-md w-48 py-2 hidden group-hover:block border-t-2 border-yellow-400">
+                        <a href="#boards" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-900">State Board</a>
+                        <a href="#boards" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-900">CBSE Board</a>
+                        <a href="#boards" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-900">ICSE Board</a>
+                    </div>
+                </div>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#admission" class="nav-link">Admission</a>
+                <a href="#branches" class="nav-link">Branches</a>
+                <a href="#contact" class="bg-blue-900 text-white px-5 py-2 rounded-full hover:bg-blue-800 transition">Contact</a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="lg:hidden text-2xl" onclick="toggleMenu()" aria-label="Toggle Navigation Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 flex-col py-4 px-6 space-y-4">
+            <a href="#home" class="block font-medium">Home</a>
+            <a href="#about" class="block font-medium">About Us</a>
+            <a href="#boards" class="block font-medium">Boards</a>
+            <a href="#gallery" class="block font-medium">Gallery</a>
+            <a href="#admission" class="block font-medium">Admission</a>
+            <a href="#branches" class="block font-medium">Branches</a>
+            <a href="#contact" class="block font-medium">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-section min-h-[500px] md:h-[650px] flex items-center text-white text-center px-4">
+        <div class="hero-overlay"></div>
+        <div class="container mx-auto hero-content">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">Mathswaala: The School of Fundamentals</h1>
+            <p class="text-lg md:text-2xl mb-8 max-w-3xl mx-auto font-light">
+                Providing expert coaching for SSC, CBSE, and ICSE students since 2010 across Mumbai and Thane with personalized attention and proven results.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#admission" class="bg-yellow-400 text-blue-900 font-bold px-8 py-4 rounded-md hover:bg-yellow-300 transition-all text-lg shadow-lg">
+                    Admission 2026-27 Open
+                </a>
+                <a href="#branches" class="bg-white/10 backdrop-blur-md border border-white/30 text-white font-bold px-8 py-4 rounded-md hover:bg-white hover:text-blue-900 transition-all text-lg">
+                    Find a Branch Near You
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Highlights Section -->
+    <section class="py-12 bg-white border-b">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-4xl font-bold text-blue-900">16+</div>
+                    <div class="text-gray-500 uppercase text-xs tracking-widest mt-1">Years of Excellence</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-blue-900">15+</div>
+                    <div class="text-gray-500 uppercase text-xs tracking-widest mt-1">Centers in Mumbai/Thane</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-blue-900">250+</div>
+                    <div class="text-gray-500 uppercase text-xs tracking-widest mt-1">Qualified Teachers</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-blue-900">10k+</div>
+                    <div class="text-gray-500 uppercase text-xs tracking-widest mt-1">Alumni Success</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-12">
+            <div class="lg:w-1/2">
+                <h2 class="text-blue-900 text-sm font-bold tracking-[0.2em] mb-2 uppercase">About Mathswaala</h2>
+                <h3 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900">Our Legacy in Academic Coaching</h3>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    Founded in 2010, <strong>Mathswaala</strong> has evolved into a premier educational hub in Mulund, Thane, and beyond. We specialize in building a <strong>conceptual foundation</strong> for students from 7th to 10th standard, ensuring a deep understanding of core subjects.
+                </p>
+                <p class="text-gray-600 mb-8 leading-relaxed">
+                    Our team implements a curriculum that balances technological advancement with personalized mentoring, ensuring every student reaches their peak potential in board examinations and beyond.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="flex items-start gap-3">
+                        <div class="bg-blue-100 p-2 rounded-full text-blue-900"><i class="fas fa-check" aria-hidden="true"></i></div>
+                        <div>
+                            <h4 class="font-bold">Holistic Growth</h4>
+                            <p class="text-sm text-gray-500">Beyond syllabus, we focus on logic and reasoning.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="bg-blue-100 p-2 rounded-full text-blue-900"><i class="fas fa-check" aria-hidden="true"></i></div>
+                        <div>
+                            <h4 class="font-bold">Expert Faculty</h4>
+                            <p class="text-sm text-gray-500">Subject matter experts with years of board experience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:w-1/2">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Active learning session at Mathswaala branch" class="rounded-xl shadow-2xl">
+                    <div class="absolute -bottom-6 -right-6 bg-blue-900 text-white p-8 rounded-xl hidden md:block">
+                        <span class="block text-4xl font-bold">2010</span>
+                        <span class="text-sm text-blue-200">Educating since</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Boards/Courses Section -->
+    <section id="boards" class="py-20 bg-white border-b">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Specialized Board Coaching</h2>
+                <div class="w-20 h-1 bg-yellow-400 mx-auto"></div>
+                <p class="text-gray-500 mt-4 max-w-2xl mx-auto">Targeted preparation for SSC, CBSE, and ICSE standards with comprehensive study material and regular testing.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- State Board -->
+                <article class="bg-gray-50 rounded-2xl p-8 card-hover border border-gray-100">
+                    <div class="text-blue-900 text-4xl mb-6"><i class="fas fa-landmark" aria-hidden="true"></i></div>
+                    <h3 class="text-2xl font-bold mb-4">SSC (State Board)</h3>
+                    <p class="text-gray-600 mb-6 text-sm leading-relaxed">Premier Maharashtra Board coaching. Our Genius program ensures students master complex concepts with ease.</p>
+                    <ul class="text-gray-600 space-y-2 mb-8 text-sm">
+                        <li><i class="fas fa-chevron-right text-xs text-blue-900 mr-2"></i> Targeted Class VII-X Syllabus</li>
+                        <li><i class="fas fa-chevron-right text-xs text-blue-900 mr-2"></i> Board Exam Focused Test Series</li>
+                        <li><i class="fas fa-chevron-right text-xs text-blue-900 mr-2"></i> Language & Science Specialists</li>
+                    </ul>
+                    <a href="#admission" class="text-blue-900 font-bold hover:underline">Apply Now <i class="fas fa-arrow-right ml-1"></i></a>
+                </article>
+
+                <!-- CBSE -->
+                <article class="bg-gray-50 rounded-2xl p-8 card-hover border border-gray-100">
+                    <div class="text-blue-900 text-4xl mb-6"><i class="fas fa-book-open" aria-hidden="true"></i></div>
+                    <h3 class="text-2xl font-bold mb-4">CBSE Board</h3>
+                    <p class="text-gray-600 mb-6 text-sm leading-relaxed">In-depth NCERT coverage and pattern research to keep students ahead in the competitive CBSE landscape.</p>
+                    <ul class="text-gray-600 space-y-2 mb-8 text-sm">
+                        <li><i class="fas fa-chevron-right text-xs text-blue-900 mr-2"></i> Intensive Science & Math focus</li>
+                        <li><i class="fas fa-chevron-right text-xs text-blue-900 mr-2"></i> Application-based Learning</li>
+                        <li><i class="fas fa-chevron-right text-xs text-blue-900 mr-2"></i> Regular Performance Feedback</li>
+                    </ul>
+                    <a href="#admission" class="text-blue-900 font-bold hover:underline">Apply Now <i class="fas fa-arrow-right ml-1"></i></a>
+                </article>
+
+                <!-- ICSE -->
+                <article class="bg-gray-50 rounded-2xl p-8 card-hover border border-gray-100">
+                    <div class="text-blue-900 text-4xl mb-6"><i class="fas fa-award" aria-hidden="true"></i></div>
+                    <h3 class="text-2xl font-bold mb-4">ICSE Board</h3>
+                    <p class="text-gray-600 mb-6 text-sm leading-relaxed">Structured learning modules designed to handle the exhaustive and detailed ICSE curriculum effectively.</p>
+                    <ul class="text-gray-600 space-y-2 mb-8 text-sm">
+                        <li><i class="fas fa-chevron-right text-xs text-blue-900 mr-2"></i> English Literature Mastery</li>
+                        <li><i class="fas fa-chevron-right text-xs text-blue-900 mr-2"></i> Project & Viva Guidance</li>
+                        <li><i class="fas fa-chevron-right text-xs text-blue-900 mr-2"></i> Analytical Study Method</li>
+                    </ul>
+                    <a href="#admission" class="text-blue-900 font-bold hover:underline">Apply Now <i class="fas fa-arrow-right ml-1"></i></a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Life at Mathswaala</h2>
+                <div class="w-20 h-1 bg-yellow-400 mx-auto"></div>
+                <p class="text-gray-500 mt-4">A glimpse into our classrooms, activities, and proud moments.</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-3 mb-12">
+                <button onclick="filterGallery('all')" class="filter-btn active px-6 py-2 rounded-full border border-gray-200 font-medium transition-all hover:border-blue-900">All Photos</button>
+                <button onclick="filterGallery('classroom')" class="filter-btn px-6 py-2 rounded-full border border-gray-200 font-medium transition-all hover:border-blue-900">Classrooms</button>
+                <button onclick="filterGallery('achievement')" class="filter-btn px-6 py-2 rounded-full border border-gray-200 font-medium transition-all hover:border-blue-900">Achievements</button>
+                <button onclick="filterGallery('events')" class="filter-btn px-6 py-2 rounded-full border border-gray-200 font-medium transition-all hover:border-blue-900">Events</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="gallery-grid">
+                <div class="gallery-item relative overflow-hidden rounded-xl group" data-category="classroom">
+                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Modern Classroom Setup" class="w-full h-64 object-cover transform transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-blue-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4">
+                        <p class="text-white font-bold text-center">Interactive Learning Sessions</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item relative overflow-hidden rounded-xl group" data-category="achievement">
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Students Celebrating Success" class="w-full h-64 object-cover transform transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-blue-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4">
+                        <p class="text-white font-bold text-center">Toppers Felicitation Ceremony</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item relative overflow-hidden rounded-xl group" data-category="events">
+                    <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Annual Gathering" class="w-full h-64 object-cover transform transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-blue-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4">
+                        <p class="text-white font-bold text-center">Cultural & Sports Events</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item relative overflow-hidden rounded-xl group" data-category="classroom">
+                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Study Group" class="w-full h-64 object-cover transform transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-blue-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4">
+                        <p class="text-white font-bold text-center">Personal Attention Batches</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item relative overflow-hidden rounded-xl group" data-category="achievement">
+                    <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Result Day" class="w-full h-64 object-cover transform transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-blue-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4">
+                        <p class="text-white font-bold text-center">Consistent High Scorers</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item relative overflow-hidden rounded-xl group" data-category="events">
+                    <img src="https://images.unsplash.com/photo-1524178232363-1fb28f74b0cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Career Seminar" class="w-full h-64 object-cover transform transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-blue-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4">
+                        <p class="text-white font-bold text-center">Seminars & Career Guidance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admission Form Section -->
+    <section id="admission" class="py-20 bg-blue-900 text-white relative overflow-hidden">
+        <div class="container mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
+            <div class="relative z-10">
+                <h2 class="text-3xl md:text-5xl font-bold mb-6">Start Your Success Journey</h2>
+                <p class="text-blue-200 text-lg mb-8">Join the 2026-27 batch. Register today at Mathswaala to receive a call back from our academic counselors.</p>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4">
+                        <div class="bg-white/10 p-3 rounded-lg"><i class="fas fa-user-graduate text-yellow-400"></i></div>
+                        <div>One-on-One Student Counseling</div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="bg-white/10 p-3 rounded-lg"><i class="fas fa-file-invoice text-yellow-400"></i></div>
+                        <div>Transparent & Flexible Fee Options</div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="bg-white/10 p-3 rounded-lg"><i class="fas fa-map-marker-alt text-yellow-400"></i></div>
+                        <div>Centers across Mulund, Thane, Kalwa & Airoli</div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white text-gray-800 p-8 rounded-2xl shadow-2xl relative z-10">
+                <h3 class="text-2xl font-bold mb-6 text-center text-blue-900">Mathswaala Registration 2026-27</h3>
+                <form onsubmit="event.preventDefault(); document.getElementById('success-msg').classList.remove('hidden');" class="space-y-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <label class="sr-only" for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="Full Name *" class="w-full p-3 border border-gray-300 rounded focus:ring-2 focus:ring-blue-500 outline-none" required>
+                        <label class="sr-only" for="mobile">Mobile No</label>
+                        <input type="tel" id="mobile" placeholder="Mobile No *" class="w-full p-3 border border-gray-300 rounded focus:ring-2 focus:ring-blue-500 outline-none" required>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <label class="sr-only" for="board">Board</label>
+                        <select id="board" class="w-full p-3 border border-gray-300 rounded outline-none" required>
+                            <option value="">Board</option>
+                            <option>SSC (State)</option>
+                            <option>CBSE</option>
+                            <option>ICSE</option>
+                        </select>
+                        <label class="sr-only" for="std">Standard</label>
+                        <select id="std" class="w-full p-3 border border-gray-300 rounded outline-none" required>
+                            <option value="">Std</option>
+                            <option>VII</option>
+                            <option>VIII</option>
+                            <option>IX</option>
+                            <option>X</option>
+                        </select>
+                        <label class="sr-only" for="branch">Branch</label>
+                        <select id="branch" class="w-full p-3 border border-gray-300 rounded outline-none" required>
+                            <option value="">Branch</option>
+                            <option>Thane (Naupada)</option>
+                            <option>Mulund (West)</option>
+                            <option>Kalwa</option>
+                            <option>Airoli</option>
+                            <option>Bhandup</option>
+                        </select>
+                    </div>
+                    <p class="text-[10px] text-gray-400 italic">
+                        Consent: By clicking register, you agree to be contacted via WhatsApp/SMS/Call by Mathswaala regarding admissions.
+                    </p>
+                    <button type="submit" class="w-full bg-blue-900 text-white font-bold py-4 rounded hover:bg-blue-800 transition shadow-lg">Submit Registration</button>
+                    
+                    <div id="success-msg" class="hidden mt-4 p-3 bg-green-100 text-green-700 rounded text-center text-sm">
+                        Registration Successful! Mathswaala team will contact you within 24 hours.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Branches Section -->
+    <section id="branches" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Mathswaala Coaching Centers</h2>
+                <div class="w-20 h-1 bg-yellow-400 mx-auto mb-4"></div>
+                <p class="text-gray-500">Find the nearest Mathswaala center across Mumbai and Thane.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Kalwa -->
+                <div class="bg-white p-6 rounded-lg shadow-sm branch-card">
+                    <h4 class="font-bold text-xl text-blue-900 mb-2">Kalwa Main Branch</h4>
+                    <address class="text-gray-500 text-sm mb-4 not-italic">
+                        <i class="fas fa-map-marker-alt mr-2 text-blue-900" aria-hidden="true"></i> 1st Floor, Akshay Building, Old Mumbai-Pune Road, Opp Pramila Hospital, Thane – 400605.
+                    </address>
+                    <div class="flex gap-4 mt-auto">
+                        <a href="tel:7506403355" class="text-blue-900 hover:text-blue-700 font-medium">Call Branch</a>
+                        <a href="#" class="text-green-600 hover:text-green-700 font-medium">WhatsApp</a>
+                    </div>
+                </div>
+
+                <!-- Mulund West -->
+                <div class="bg-white p-6 rounded-lg shadow-sm branch-card">
+                    <h4 class="font-bold text-xl text-blue-900 mb-2">Mulund (West) Branch</h4>
+                    <address class="text-gray-500 text-sm mb-4 not-italic">
+                        <i class="fas fa-map-marker-alt mr-2 text-blue-900" aria-hidden="true"></i> 101, Neelkanth Heights, Bps Cross Road, Off Devidayal Road, Above SBI.
+                    </address>
+                    <div class="flex gap-4 mt-auto">
+                        <a href="tel:7045508333" class="text-blue-900 hover:text-blue-700 font-medium">Call Branch</a>
+                        <a href="#" class="text-green-600 hover:text-green-700 font-medium">WhatsApp</a>
+                    </div>
+                </div>
+
+                <!-- Airoli -->
+                <div class="bg-white p-6 rounded-lg shadow-sm branch-card">
+                    <h4 class="font-bold text-xl text-blue-900 mb-2">Airoli Center</h4>
+                    <address class="text-gray-500 text-sm mb-4 not-italic">
+                        <i class="fas fa-map-marker-alt mr-2 text-blue-900" aria-hidden="true"></i> Shop No. 11-15, Plot No. 6A, Ripples Mall, Sector – 7, Airoli – 400708.
+                    </address>
+                    <div class="flex gap-4 mt-auto">
+                        <a href="tel:9324802622" class="text-blue-900 hover:text-blue-700 font-medium">Call Branch</a>
+                        <a href="#" class="text-green-600 hover:text-green-700 font-medium">WhatsApp</a>
+                    </div>
+                </div>
+                
+                <div class="bg-blue-900 p-6 rounded-lg shadow-sm flex flex-col items-center justify-center text-white text-center">
+                    <h4 class="font-bold text-xl mb-2">15+ More Locations</h4>
+                    <p class="text-blue-200 text-sm mb-4">Including Dombivli, Vasant Vihar, Bhandup & more.</p>
+                    <a href="#contact" class="bg-white text-blue-900 px-6 py-2 rounded-full font-bold">View Full Directory</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="py-20 bg-white border-t">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-12 uppercase tracking-wide">Success Stories</h2>
+            <div class="max-w-4xl mx-auto bg-gray-50 p-8 md:p-12 rounded-3xl relative border border-gray-100 shadow-sm">
+                <i class="fas fa-quote-left text-5xl text-blue-100 absolute top-8 left-8" aria-hidden="true"></i>
+                <blockquote class="text-lg md:text-2xl italic text-gray-700 mb-8 relative z-10">
+                    "Secured 96.40% in boards. The Mathswaala Test Series and expert faculty guidance were crucial for my success in the SSC Board exams."
+                </blockquote>
+                <cite class="not-italic">
+                    <div class="font-bold text-blue-900 text-xl">ATHARVA KADAM</div>
+                    <div class="text-yellow-600 font-bold">96.40% - SSC Board Topper</div>
+                </cite>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-blue-950 text-white pt-20 pb-10">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 border-b border-white/10 pb-12 mb-8">
+            <div>
+                <div class="text-3xl font-bold mb-6">MATHSWAALA</div>
+                <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                    Mathswaala: Mumbai and Thane's most trusted coaching institute for school boards since 2010.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-yellow-400 hover:text-blue-900 transition" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-yellow-400 hover:text-blue-900 transition" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-yellow-400 hover:text-blue-900 transition" aria-label="Follow us on Youtube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <nav>
+                <h4 class="font-bold text-xl mb-6">Explore</h4>
+                <ul class="space-y-4 text-gray-400 text-sm">
+                    <li><a href="#about" class="hover:text-yellow-400">About Our Methodology</a></li>
+                    <li><a href="#boards" class="hover:text-yellow-400">Fee Structure</a></li>
+                    <li><a href="#admission" class="hover:text-yellow-400">Registration Portal</a></li>
+                    <li><a href="#" class="hover:text-yellow-400">Privacy & Terms</a></li>
+                </ul>
+            </nav>
+
+            <nav>
+                <h4 class="font-bold text-xl mb-6">Coaching Boards</h4>
+                <ul class="space-y-4 text-gray-400 text-sm">
+                    <li><a href="#boards" class="hover:text-yellow-400">SSC Coaching Classes</a></li>
+                    <li><a href="#boards" class="hover:text-yellow-400">CBSE Tuition Center</a></li>
+                    <li><a href="#boards" class="hover:text-yellow-400">ICSE Tutoring</a></li>
+                    <li><a href="#boards" class="hover:text-yellow-400">Standard 7th-10th Coaching</a></li>
+                </ul>
+            </nav>
+
+            <div>
+                <h4 class="font-bold text-xl mb-6">Corporate Office</h4>
+                <address class="space-y-4 text-gray-400 text-sm not-italic">
+                    <p class="flex gap-3">
+                        <i class="fas fa-map-marker-alt text-yellow-400 mt-1" aria-hidden="true"></i>
+                        <span>1st Floor, Akshay Building, Kalwa, Thane - 400605.</span>
+                    </p>
+                    <p class="flex gap-3">
+                        <i class="fas fa-phone text-yellow-400 mt-1" aria-hidden="true"></i>
+                        <span><a href="tel:+919870956710">+91 98709 56710</a></span>
+                    </p>
+                    <p class="flex gap-3">
+                        <i class="fas fa-envelope text-yellow-400 mt-1" aria-hidden="true"></i>
+                        <span><a href="mailto:connect@mathswaala.com">connect@mathswaala.com</a></span>
+                    </p>
+                </address>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-4 text-center text-gray-500 text-sm">
+            <p>&copy; 2026 Mathswaala. Optimized for Search & Performance.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919870956710" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:bg-green-600 transition-all z-[100] group" aria-label="Chat with us on WhatsApp">
+        <i class="fab fa-whatsapp text-3xl"></i>
+        <span class="absolute right-16 bg-white text-gray-800 px-3 py-1 rounded shadow-lg text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Chat with Mathswaala</span>
+    </a>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+        }
+
+        function filterGallery(category) {
+            const items = document.querySelectorAll('.gallery-item');
+            const buttons = document.querySelectorAll('.filter-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.textContent.toLowerCase().includes(category)) {
+                    btn.classList.add('active');
+                } else if (category === 'all' && btn.textContent.toLowerCase() === 'all photos') {
+                    btn.classList.add('active');
+                }
+            });
+            items.forEach(item => {
+                if (category === 'all' || item.getAttribute('data-category') === category) {
+                    item.classList.remove('hidden-item');
+                } else {
+                    item.classList.add('hidden-item');
+                }
+            });
+        }
+
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
