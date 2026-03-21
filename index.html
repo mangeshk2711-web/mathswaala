@@ -76,6 +76,14 @@
             background-position: center;
         }
 
+        /* RESTORED MATH NOTATION OVERLAY */
+        .math-hero-pattern {
+            position: absolute;
+            inset: 0;
+            opacity: 0.12;
+            background-image: url("data:image/svg+xml,%3Csvg width='200' height='200' viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Ctext x='20' y='50' font-family='serif' font-size='24' fill='white'%3Elog(x)%3C/text%3E%3Ctext x='130' y='160' font-family='serif' font-size='32' fill='white'%3Eθ%3C/text%3E%3Ctext x='30' y='150' font-family='serif' font-size='20' fill='white'%3E∑n%3C/text%3E%3Ctext x='140' y='60' font-family='serif' font-size='20' fill='white'%3Eπ%3C/text%3E%3Ccircle cx='100' cy='100' r='40' stroke='white' fill='none' stroke-width='0.5'/%3E%3Cpath d='M10 190 L190 10' stroke='white' stroke-width='0.5'/%3E%3C/svg%3E");
+        }
+
         .card-hover:hover {
             transform: translateY(-8px);
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -133,7 +141,10 @@
     </nav>
 
     <!-- Hero Section -->
-    <header id="home" class="hero-section min-h-[500px] flex items-center text-white text-center md:text-left px-4">
+    <header id="home" class="hero-section min-h-[500px] flex items-center text-white text-center md:text-left px-4 overflow-hidden relative">
+        <!-- RESTORED PATTERN LAYER -->
+        <div class="math-hero-pattern"></div>
+        
         <div class="container mx-auto relative z-10">
             <div class="max-w-4xl">
                 <div class="flex flex-wrap justify-center md:justify-start gap-2 mb-6 uppercase">
@@ -166,7 +177,6 @@
                     <h3 class="text-3xl md:text-5xl font-black mb-6 text-blue-950 leading-tight tracking-tighter uppercase">
                         Transforming Challenges into <span class="text-blue-600 underline decoration-yellow-400">Confidence.</span>
                     </h3>
-                    <!-- text-justify ensures mobile friendly straight lines -->
                     <div class="space-y-6 text-gray-600 font-medium leading-relaxed text-sm md:text-base text-justify">
                         <p>Established in 2010, <strong>Mathswaala</strong> was founded with a singular vision: to transform Mathematics from a daunting subject into a language of logic and confidence. Located at <strong>Highland Residency, Balkum Dhokali</strong>, we have become the go-to destination for parents seeking the best <strong>Maths tuition in Thane West</strong> for <strong>CBSE, ICSE & State Board</strong>.</p>
                         
@@ -238,12 +248,10 @@
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="gallery-container">
-                <!-- Image slots are hidden unless images are uploaded and loaded -->
                 <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="classroom"><img src="class1.jpg" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onload="this.parentElement.style.display='block'"></div>
                 <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="classroom"><img src="class2.jpg" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onload="this.parentElement.style.display='block'"></div>
                 <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="events"><img src="event1.jpg" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onload="this.parentElement.style.display='block'"></div>
                 <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="achievements"><img src="result1.jpg" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onload="this.parentElement.style.display='block'"></div>
-                <!-- Extra slots for user to populate -->
                 <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="classroom"><img src="class3.jpg" class="w-full h-full object-cover" onload="this.parentElement.style.display='block'"></div>
                 <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="events"><img src="event2.jpg" class="w-full h-full object-cover" onload="this.parentElement.style.display='block'"></div>
             </div>
