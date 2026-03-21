@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Favicon Logic -->
+    <!-- 1. Physical File (Priority) - v=1 helps bypass browser cache -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico?v=1">
+    <link rel="shortcut icon" href="favicon.ico?v=1" type="image/x-icon">
+    
+    <!-- 2. SVG Emoji Fallback (Only visible if favicon.ico is missing) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📐</text></svg>">
     
     <!-- SEO Meta Tags -->
     <title>Mathswaala | Best Maths Tuition in Thane | Science, Commerce, CBSE & ICSE</title>
@@ -14,14 +18,14 @@
     <meta name="keywords" content="Maths tuition Thane, Science Maths coaching Thane, Commerce Maths coaching Thane, CBSE Maths expert Thane, ICSE Maths specialist, 10th board maths coaching Balkum, Pravin Nagendra Singh sir">
     <link rel="canonical" href="https://www.mathswaala.com/" />
 
-    <!-- Open Graph / Social Media Meta Tags -->
+    <!-- Social Media Meta Tags -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Mathswaala | Expert Mathematics Coaching in Thane">
     <meta property="og:description" content="Transforming Mathematics into a language of logic. Specialized 8th-12th coaching for Science and Commerce in Thane.">
     <meta property="og:url" content="https://www.mathswaala.com/">
     <meta property="og:image" content="classroom.jpg">
 
-    <!-- JSON-LD Structured Data (Local Business Schema) -->
+    <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -47,13 +51,7 @@
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday"
+          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
         ],
         "opens": "08:00",
         "closes": "21:00"
@@ -193,7 +191,7 @@
                 <!-- Topper 1 -->
                 <div class="bg-white p-8 rounded-3xl shadow-xl topper-card text-center group card-hover">
                     <div class="w-28 h-28 bg-blue-900 text-white rounded-full flex items-center justify-center mx-auto mb-6 text-3xl font-black border-4 border-yellow-400 overflow-hidden relative">
-                        <img src="topper1.jpg" alt="Sharwin Raorane - Mathswaala Topper" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500" onload="this.style.opacity='1'">
+                        <img src="topper1.jpg" alt="Sharwin Raorane" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500" onload="this.style.opacity='1'">
                         <span class="relative z-0">97.6%</span>
                     </div>
                     <h3 class="text-xl font-black text-blue-900 uppercase">Sharwin Raorane</h3>
@@ -202,7 +200,7 @@
                 <!-- Topper 2 -->
                 <div class="bg-white p-8 rounded-3xl shadow-xl topper-card text-center group card-hover md:scale-105 border-t-8 border-blue-900">
                     <div class="w-28 h-28 bg-blue-900 text-white rounded-full flex items-center justify-center mx-auto mb-6 text-3xl font-black border-4 border-yellow-400 overflow-hidden relative">
-                        <img src="topper2.jpg" alt="Shivansh Tiwari - Mathswaala Topper" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500" onload="this.style.opacity='1'">
+                        <img src="topper2.jpg" alt="Shivansh Tiwari" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500" onload="this.style.opacity='1'">
                         <span class="relative z-0">96.6%</span>
                     </div>
                     <h3 class="text-xl font-black text-blue-900 uppercase">Shivansh Tiwari</h3>
@@ -211,7 +209,7 @@
                 <!-- Topper 3 -->
                 <div class="bg-white p-8 rounded-3xl shadow-xl topper-card text-center group card-hover">
                     <div class="w-28 h-28 bg-blue-900 text-white rounded-full flex items-center justify-center mx-auto mb-6 text-3xl font-black border-4 border-yellow-400 overflow-hidden relative">
-                        <img src="topper3.jpg" alt="Nihal Suvarna - Mathswaala Topper" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500" onload="this.style.opacity='1'">
+                        <img src="topper3.jpg" alt="Nihal Suvarna" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500" onload="this.style.opacity='1'">
                         <span class="relative z-0">94.6%</span>
                     </div>
                     <h3 class="text-xl font-black text-blue-900 uppercase">Nihal Suvarna</h3>
@@ -237,28 +235,55 @@
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="gallery-container">
-                <!-- Category: Classroom -->
+                <!-- Classroom -->
                 <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="classroom">
-                    <img src="class1.jpg" alt="Mathematics Classroom at Mathswaala Thane" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onload="this.parentElement.style.display='block'">
+                    <img src="class1.jpg" alt="Classroom 1" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onload="this.parentElement.style.display='block'">
                 </div>
                 <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="classroom">
-                    <img src="class2.jpg" alt="Highland Residency Tuition Classroom" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onload="this.parentElement.style.display='block'">
+                    <img src="class2.jpg" alt="Classroom 2" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onload="this.parentElement.style.display='block'">
+                </div>
+                <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="classroom">
+                    <img src="class3.jpg" alt="Classroom 3" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onload="this.parentElement.style.display='block'">
+                </div>
+                <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="classroom">
+                    <img src="class4.jpg" alt="Classroom 4" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onload="this.parentElement.style.display='block'">
+                </div>
+                <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="classroom">
+                    <img src="class5.jpg" alt="Classroom 5" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onload="this.parentElement.style.display='block'">
                 </div>
 
-                <!-- Category: Events -->
+                <!-- Events -->
                 <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="events">
-                    <img src="event1.jpg" alt="Student Event at Mathswaala" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onload="this.parentElement.style.display='block'">
+                    <img src="event1.jpg" alt="Event 1" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onload="this.parentElement.style.display='block'">
                 </div>
                 <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="events">
-                    <img src="event2.jpg" alt="Maths Workshop in Thane" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onload="this.parentElement.style.display='block'">
+                    <img src="event2.jpg" alt="Event 2" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onload="this.parentElement.style.display='block'">
+                </div>
+                <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="events">
+                    <img src="event3.jpg" alt="Event 3" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onload="this.parentElement.style.display='block'">
+                </div>
+                <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="events">
+                    <img src="event4.jpg" alt="Event 4" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onload="this.parentElement.style.display='block'">
+                </div>
+                <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="events">
+                    <img src="event5.jpg" alt="Event 5" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onload="this.parentElement.style.display='block'">
                 </div>
 
-                <!-- Category: Achievements -->
+                <!-- Achievements -->
                 <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="achievements">
-                    <img src="result1.jpg" alt="Mathswaala Student Achievement" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onload="this.parentElement.style.display='block'">
+                    <img src="result1.jpg" alt="Achievement 1" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onload="this.parentElement.style.display='block'">
                 </div>
                 <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="achievements">
-                    <img src="result2.jpg" alt="Topper Success at Mathswaala" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onload="this.parentElement.style.display='block'">
+                    <img src="result2.jpg" alt="Achievement 2" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onload="this.parentElement.style.display='block'">
+                </div>
+                <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="achievements">
+                    <img src="result3.jpg" alt="Achievement 3" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onload="this.parentElement.style.display='block'">
+                </div>
+                <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="achievements">
+                    <img src="result4.jpg" alt="Achievement 4" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onload="this.parentElement.style.display='block'">
+                </div>
+                <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="achievements">
+                    <img src="result5.jpg" alt="Achievement 5" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onload="this.parentElement.style.display='block'">
                 </div>
             </div>
         </div>
