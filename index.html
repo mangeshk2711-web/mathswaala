@@ -41,8 +41,8 @@
             100% { box-shadow: 0 0 0 0 rgba(250, 204, 21, 0); }
         }
 
-        .gallery-item { transition: all 0.4s ease; }
-        .gallery-item.hidden-img { display: none; opacity: 0; transform: scale(0.95); }
+        .gallery-item { transition: all 0.4s ease; display: none; }
+        .gallery-item.hidden-img { display: none !important; }
         .filter-btn.active-filter { background-color: #1e3a8a; color: white; border-color: #1e3a8a; }
     </style>
 </head>
@@ -110,7 +110,7 @@
             <div class="flex flex-col lg:flex-row items-center gap-12 md:gap-16">
                 <div class="lg:w-1/2">
                     <h2 class="text-blue-900 text-sm font-black tracking-[0.3em] mb-4 uppercase">The Mathswaala Story</h2>
-                    <h3 class="text-3xl md:text-5xl font-black mb-6 text-blue-950 tracking-tighter uppercase leading-tight">
+                    <h3 class="text-3xl md:text-5xl font-black mb-6 text-blue-950 leading-tight tracking-tighter uppercase">
                         Transforming Challenges into <span class="text-blue-600 underline decoration-yellow-400">Confidence.</span>
                     </h3>
                     <div class="space-y-6 text-gray-600 font-medium leading-relaxed text-sm md:text-base">
@@ -120,20 +120,10 @@
                         
                         <p>Our coaching methodology is specifically tailored for 8th, 9th, and 10th-grade students as well as <strong>11th/12th Commerce</strong>. We don't just solve problems; we build the "why" behind every formula. Under Mr. Singh's dedicated guidance, students develop the self-study habits and critical thinking skills required to build exceptional scores and lifelong mathematical fluency.</p>
                     </div>
-                    <div class="mt-10 flex flex-wrap gap-4">
-                        <div class="flex items-center gap-3 bg-blue-50 px-5 py-3 rounded-xl border border-blue-100">
-                            <i class="fas fa-user-tie text-yellow-500 text-xl"></i>
-                            <span class="text-xs md:text-sm font-black text-blue-900 uppercase tracking-tight">Founder Mentorship</span>
-                        </div>
-                        <div class="flex items-center gap-3 bg-blue-50 px-5 py-3 rounded-xl border border-blue-100">
-                            <i class="fas fa-graduation-cap text-yellow-500 text-xl"></i>
-                            <span class="text-xs md:text-sm font-black text-blue-900 uppercase tracking-tight">Commerce Maths Expert</span>
-                        </div>
-                    </div>
                 </div>
-                <div class="lg:w-1/2 relative">
+                <div id="about-image-container" class="lg:w-1/2 relative hidden">
                     <div class="relative z-10 rounded-[2rem] overflow-hidden shadow-2xl bg-gray-200">
-                        <img src="classroom.jpg" alt="Mr. Pravin Singh sir addressing the class" class="w-full h-auto object-cover border-4 border-white">
+                        <img src="classroom.jpg" alt="Mr. Pravin Singh sir addressing the class" class="w-full h-auto object-cover border-4 border-white" onload="document.getElementById('about-image-container').classList.remove('hidden')">
                         <div class="absolute bottom-0 left-0 right-0 bg-blue-900/90 text-white p-3 text-center text-[10px] font-black uppercase tracking-widest">Mr. Pravin Nagendra Singh sir addressing the class</div>
                     </div>
                     <div class="absolute -bottom-6 -right-6 w-32 h-32 md:w-64 md:h-64 bg-yellow-400 rounded-3xl -z-0 rotate-12"></div>
@@ -150,8 +140,8 @@
                 <!-- Topper 1 -->
                 <div class="bg-white p-8 rounded-3xl shadow-xl topper-card text-center group card-hover">
                     <div class="w-28 h-28 bg-blue-900 text-white rounded-full flex items-center justify-center mx-auto mb-6 text-3xl font-black border-4 border-yellow-400 overflow-hidden relative">
-                        <img src="topper1.jpg" class="absolute inset-0 w-full h-full object-cover">
-                        <span class="relative z-10 bg-blue-900/40 px-2 rounded">97.6%</span>
+                        <img src="topper1.jpg" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500" onload="this.style.opacity='1'">
+                        <span class="relative z-0">97.6%</span>
                     </div>
                     <h3 class="text-xl font-black text-blue-900 uppercase">Sharwin Raorane</h3>
                     <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-2">DAV Public School • CBSE Topper</p>
@@ -159,8 +149,8 @@
                 <!-- Topper 2 -->
                 <div class="bg-white p-8 rounded-3xl shadow-xl topper-card text-center group card-hover md:scale-105 border-t-8 border-blue-900">
                     <div class="w-28 h-28 bg-blue-900 text-white rounded-full flex items-center justify-center mx-auto mb-6 text-3xl font-black border-4 border-yellow-400 overflow-hidden relative">
-                        <img src="topper2.jpg" class="absolute inset-0 w-full h-full object-cover">
-                        <span class="relative z-10 bg-blue-900/40 px-2 rounded">96.6%</span>
+                        <img src="topper2.jpg" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500" onload="this.style.opacity='1'">
+                        <span class="relative z-0">96.6%</span>
                     </div>
                     <h3 class="text-xl font-black text-blue-900 uppercase">Shivansh Tiwari</h3>
                     <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-2">Sri Ma Vidyalaya • State Board</p>
@@ -168,8 +158,8 @@
                 <!-- Topper 3 -->
                 <div class="bg-white p-8 rounded-3xl shadow-xl topper-card text-center group card-hover">
                     <div class="w-28 h-28 bg-blue-900 text-white rounded-full flex items-center justify-center mx-auto mb-6 text-3xl font-black border-4 border-yellow-400 overflow-hidden relative">
-                        <img src="topper3.jpg" class="absolute inset-0 w-full h-full object-cover">
-                        <span class="relative z-10 bg-blue-900/40 px-2 rounded">94.6%</span>
+                        <img src="topper3.jpg" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500" onload="this.style.opacity='1'">
+                        <span class="relative z-0">94.6%</span>
                     </div>
                     <h3 class="text-xl font-black text-blue-900 uppercase">Nihal Suvarna</h3>
                     <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-2">Lok Puram School • ICSE Topper</p>
@@ -178,7 +168,7 @@
         </div>
     </section>
 
-    <!-- Inside the Learning Center (Expanded Gallery) -->
+    <!-- Inside the Learning Center (Smart Gallery) -->
     <section id="gallery" class="py-16 md:py-24 bg-white">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
@@ -193,73 +183,57 @@
                 <button onclick="filterGallery('achievements', this)" class="filter-btn px-6 py-2 rounded-full border-2 border-gray-200 font-black text-[10px] uppercase tracking-widest text-gray-400 transition-all hover:border-blue-900">Achievements</button>
             </div>
 
-            <!-- Gallery Grid: Files class1-5, event1-5, result1-5 -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="gallery-container">
                 
-                <!-- Category: Classroom (5 slots) -->
+                <!-- Category: Classroom -->
                 <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="classroom">
-                    <img src="class1.jpg" alt="Classroom 1" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-blue-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"><span class="text-white font-black uppercase text-xs">Classroom</span></div>
+                    <img src="class1.jpg" alt="Classroom" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onload="this.parentElement.style.display='block'">
                 </div>
                 <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="classroom">
-                    <img src="class2.jpg" alt="Classroom 2" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-blue-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"><span class="text-white font-black uppercase text-xs">Classroom</span></div>
+                    <img src="class2.jpg" alt="Classroom" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onload="this.parentElement.style.display='block'">
                 </div>
                 <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="classroom">
-                    <img src="class3.jpg" alt="Classroom 3" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-blue-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"><span class="text-white font-black uppercase text-xs">Classroom</span></div>
+                    <img src="class3.jpg" alt="Classroom" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onload="this.parentElement.style.display='block'">
                 </div>
                 <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="classroom">
-                    <img src="class4.jpg" alt="Classroom 4" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-blue-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"><span class="text-white font-black uppercase text-xs">Classroom</span></div>
+                    <img src="class4.jpg" alt="Classroom" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onload="this.parentElement.style.display='block'">
                 </div>
                 <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="classroom">
-                    <img src="class5.jpg" alt="Classroom 5" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-blue-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"><span class="text-white font-black uppercase text-xs">Classroom</span></div>
+                    <img src="class5.jpg" alt="Classroom" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onload="this.parentElement.style.display='block'">
                 </div>
 
-                <!-- Category: Events (5 slots) -->
+                <!-- Category: Events -->
                 <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="events">
-                    <img src="event1.jpg" alt="Event 1" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-blue-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"><span class="text-white font-black uppercase text-xs">Events</span></div>
+                    <img src="event1.jpg" alt="Event" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onload="this.parentElement.style.display='block'">
                 </div>
                 <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="events">
-                    <img src="event2.jpg" alt="Event 2" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-blue-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"><span class="text-white font-black uppercase text-xs">Events</span></div>
+                    <img src="event2.jpg" alt="Event" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onload="this.parentElement.style.display='block'">
                 </div>
                 <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="events">
-                    <img src="event3.jpg" alt="Event 3" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-blue-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"><span class="text-white font-black uppercase text-xs">Events</span></div>
+                    <img src="event3.jpg" alt="Event" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onload="this.parentElement.style.display='block'">
                 </div>
                 <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="events">
-                    <img src="event4.jpg" alt="Event 4" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-blue-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"><span class="text-white font-black uppercase text-xs">Events</span></div>
+                    <img src="event4.jpg" alt="Event" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onload="this.parentElement.style.display='block'">
                 </div>
                 <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="events">
-                    <img src="event5.jpg" alt="Event 5" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-blue-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"><span class="text-white font-black uppercase text-xs">Events</span></div>
+                    <img src="event5.jpg" alt="Event" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onload="this.parentElement.style.display='block'">
                 </div>
 
-                <!-- Category: Achievements (5 slots) -->
+                <!-- Category: Achievements -->
                 <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="achievements">
-                    <img src="result1.jpg" alt="Achievement 1" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-blue-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"><span class="text-white font-black uppercase text-xs">Achievements</span></div>
+                    <img src="result1.jpg" alt="Achievement" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onload="this.parentElement.style.display='block'">
                 </div>
                 <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="achievements">
-                    <img src="result2.jpg" alt="Achievement 2" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-blue-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"><span class="text-white font-black uppercase text-xs">Achievements</span></div>
+                    <img src="result2.jpg" alt="Achievement" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onload="this.parentElement.style.display='block'">
                 </div>
                 <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="achievements">
-                    <img src="result3.jpg" alt="Achievement 3" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-blue-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"><span class="text-white font-black uppercase text-xs">Achievements</span></div>
+                    <img src="result3.jpg" alt="Achievement" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onload="this.parentElement.style.display='block'">
                 </div>
                 <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="achievements">
-                    <img src="result4.jpg" alt="Achievement 4" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-blue-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"><span class="text-white font-black uppercase text-xs">Achievements</span></div>
+                    <img src="result4.jpg" alt="Achievement" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onload="this.parentElement.style.display='block'">
                 </div>
                 <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="achievements">
-                    <img src="result5.jpg" alt="Achievement 5" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-blue-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"><span class="text-white font-black uppercase text-xs">Achievements</span></div>
+                    <img src="result5.jpg" alt="Achievement" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onload="this.parentElement.style.display='block'">
                 </div>
 
             </div>
@@ -279,7 +253,7 @@
                     </address>
                 </div>
                 <div class="md:w-7/12 w-full">
-                    <form class="space-y-4" onsubmit="event.preventDefault(); alert('Request Received!');">
+                    <form class="space-y-4" onsubmit="event.preventDefault();">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <input type="text" placeholder="Student Name" class="w-full p-4 bg-white border border-gray-200 rounded-xl text-blue-900 font-bold" required>
                             <input type="tel" placeholder="Mobile Number" class="w-full p-4 bg-white border border-gray-200 rounded-xl text-blue-900 font-bold" required>
@@ -291,28 +265,6 @@
                         </select>
                         <button type="submit" class="w-full bg-yellow-400 text-blue-900 font-black py-4 rounded-xl hover:bg-white transition uppercase shadow-xl">Book Free Demo Slot</button>
                     </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Branch Info -->
-    <section id="contact" class="py-16 md:py-24 bg-white border-t border-gray-200">
-        <div class="container mx-auto px-4">
-            <div class="max-w-4xl mx-auto bg-gray-50 p-8 md:p-12 rounded-[2rem] shadow-sm flex flex-col md:flex-row items-center gap-8 md:gap-12 text-center md:text-left">
-                <div class="flex-1 text-center md:text-left">
-                    <h3 class="text-2xl md:text-3xl font-black text-blue-900 mb-4 uppercase tracking-tighter">The Maths Hub</h3>
-                    <p class="text-gray-500 font-bold mb-6 italic text-sm md:text-base">G3, Bldg No. 3 & 5, Highland Residency,<br>Balkum Dhokali Road, Thane - 400601</p>
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                        <a href="tel:9029807816" class="flex items-center justify-center gap-3 bg-blue-900 text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-black hover:bg-yellow-400 hover:text-blue-900 transition shadow-lg text-sm md:text-base uppercase"><i class="fas fa-phone-alt"></i> Call 90298 07816</a>
-                        <a href="https://wa.me/919029807816" class="flex items-center justify-center gap-3 border-2 border-green-500 text-green-600 px-6 md:px-8 py-3 md:py-4 rounded-full font-black hover:bg-green-500 hover:text-white transition text-sm md:text-base uppercase"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-                    </div>
-                </div>
-                <div class="w-32 h-32 md:w-48 md:h-48 bg-blue-50 rounded-full flex items-center justify-center shrink-0 border-8 border-white shadow-inner">
-                    <div class="text-center">
-                        <div class="text-3xl md:text-4xl font-black text-blue-900 leading-none">16+</div>
-                        <div class="text-[8px] md:text-[9px] font-black uppercase tracking-widest text-gray-400 mt-2">Years of<br>Excellence</div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -339,7 +291,6 @@
             const items = document.querySelectorAll('.gallery-item');
             const btns = document.querySelectorAll('.filter-btn');
             
-            // UI Update
             btns.forEach(b => {
                 b.classList.remove('active-filter', 'border-blue-900', 'text-blue-900');
                 b.classList.add('border-gray-200', 'text-gray-400');
@@ -347,12 +298,15 @@
             btn.classList.add('active-filter', 'border-blue-900', 'text-blue-900');
             btn.classList.remove('border-gray-200', 'text-gray-400');
 
-            // Filtering Logic
             items.forEach(item => {
-                if (cat === 'all' || item.getAttribute('data-cat') === cat) {
-                    item.classList.remove('hidden-img');
-                } else {
-                    item.classList.add('hidden-img');
+                const img = item.querySelector('img');
+                // Only act on items that have successfully loaded images
+                if (img.complete && img.naturalHeight !== 0) {
+                    if (cat === 'all' || item.getAttribute('data-cat') === cat) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
                 }
             });
         }
