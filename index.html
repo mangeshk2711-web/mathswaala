@@ -178,7 +178,7 @@
         </div>
     </section>
 
-    <!-- Inside the Learning Center -->
+    <!-- Inside the Learning Center (Unified Gallery with Categories) -->
     <section id="gallery" class="py-16 md:py-24 bg-white">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
@@ -193,19 +193,51 @@
                 <button onclick="filterGallery('achievements', this)" class="filter-btn px-6 py-2 rounded-full border-2 border-gray-200 font-black text-[10px] uppercase tracking-widest text-gray-400 transition-all hover:border-blue-900">Achievements</button>
             </div>
 
+            <!-- Gallery Grid: Upload files with names like class1.jpg, event1.jpg, result1.jpg -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="gallery-container">
+                
+                <!-- Category: Classroom -->
                 <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="classroom">
-                    <img src="class1.jpg" onerror="this.src='https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600'" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-blue-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"><span class="text-white font-black uppercase text-xs">Classroom View 1</span></div>
+                    <img src="class1.jpg" alt="Classroom View 1" onerror="this.src='https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600'" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-blue-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"><span class="text-white font-black uppercase text-xs">Classroom</span></div>
+                </div>
+                <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="classroom">
+                    <img src="class2.jpg" alt="Classroom View 2" onerror="this.src='https://images.unsplash.com/photo-1544531586-fde5298cdd40?w=600'" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-blue-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"><span class="text-white font-black uppercase text-xs">Classroom</span></div>
+                </div>
+                <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="classroom">
+                    <img src="class3.jpg" alt="Classroom View 3" onerror="this.src='https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600'" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-blue-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"><span class="text-white font-black uppercase text-xs">Classroom</span></div>
+                </div>
+
+                <!-- Category: Events -->
+                <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="events">
+                    <img src="event1.jpg" alt="Event View 1" onerror="this.src='https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=600'" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-blue-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"><span class="text-white font-black uppercase text-xs">Events</span></div>
                 </div>
                 <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="events">
-                    <img src="event1.jpg" onerror="this.src='https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=600'" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-blue-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"><span class="text-white font-black uppercase text-xs">Event 1</span></div>
+                    <img src="event2.jpg" alt="Event View 2" onerror="this.src='https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600'" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-blue-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"><span class="text-white font-black uppercase text-xs">Events</span></div>
+                </div>
+                <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="events">
+                    <img src="event3.jpg" alt="Event View 3" onerror="this.src='https://images.unsplash.com/photo-1523287562758-66c7fc58967f?w=600'" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-blue-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"><span class="text-white font-black uppercase text-xs">Events</span></div>
+                </div>
+
+                <!-- Category: Achievements -->
+                <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="achievements">
+                    <img src="result1.jpg" alt="Achievement View 1" onerror="this.src='https://images.unsplash.com/photo-1523287562758-66c7fc58967f?w=600'" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-blue-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"><span class="text-white font-black uppercase text-xs">Achievements</span></div>
                 </div>
                 <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="achievements">
-                    <img src="result1.jpg" onerror="this.src='https://images.unsplash.com/photo-1523287562758-66c7fc58967f?w=600'" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-blue-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"><span class="text-white font-black uppercase text-xs">Achievement 1</span></div>
+                    <img src="result2.jpg" alt="Achievement View 2" onerror="this.src='https://images.unsplash.com/photo-1543269865-cbf427effbad?w=600'" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-blue-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"><span class="text-white font-black uppercase text-xs">Achievements</span></div>
                 </div>
+                <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="achievements">
+                    <img src="result3.jpg" alt="Achievement View 3" onerror="this.src='https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600'" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-blue-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"><span class="text-white font-black uppercase text-xs">Achievements</span></div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -283,6 +315,7 @@
             const items = document.querySelectorAll('.gallery-item');
             const btns = document.querySelectorAll('.filter-btn');
             
+            // UI Update
             btns.forEach(b => {
                 b.classList.remove('active-filter', 'border-blue-900', 'text-blue-900');
                 b.classList.add('border-gray-200', 'text-gray-400');
@@ -290,6 +323,7 @@
             btn.classList.add('active-filter', 'border-blue-900', 'text-blue-900');
             btn.classList.remove('border-gray-200', 'text-gray-400');
 
+            // Filtering Logic
             items.forEach(item => {
                 if (cat === 'all' || item.getAttribute('data-cat') === cat) {
                     item.classList.remove('hidden-img');
