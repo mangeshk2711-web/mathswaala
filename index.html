@@ -178,7 +178,7 @@
         </div>
     </section>
 
-    <!-- Inside the Learning Center (Unified Gallery with Categories) -->
+    <!-- Inside the Learning Center (Expanded Gallery) -->
     <section id="gallery" class="py-16 md:py-24 bg-white">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
@@ -193,48 +193,72 @@
                 <button onclick="filterGallery('achievements', this)" class="filter-btn px-6 py-2 rounded-full border-2 border-gray-200 font-black text-[10px] uppercase tracking-widest text-gray-400 transition-all hover:border-blue-900">Achievements</button>
             </div>
 
-            <!-- Gallery Grid: Upload files with names like class1.jpg, event1.jpg, result1.jpg -->
+            <!-- Gallery Grid: Upload 5 images for each category with names class1-5, event1-5, result1-5 -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="gallery-container">
                 
-                <!-- Category: Classroom -->
+                <!-- Category: Classroom (5 slots) -->
                 <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="classroom">
-                    <img src="class1.jpg" alt="Classroom View 1" onerror="this.src='https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600'" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <img src="class1.jpg" alt="Classroom 1" onerror="this.src='https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600'" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
                     <div class="absolute inset-0 bg-blue-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"><span class="text-white font-black uppercase text-xs">Classroom</span></div>
                 </div>
                 <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="classroom">
-                    <img src="class2.jpg" alt="Classroom View 2" onerror="this.src='https://images.unsplash.com/photo-1544531586-fde5298cdd40?w=600'" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <img src="class2.jpg" alt="Classroom 2" onerror="this.src='https://images.unsplash.com/photo-1544531586-fde5298cdd40?w=600'" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
                     <div class="absolute inset-0 bg-blue-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"><span class="text-white font-black uppercase text-xs">Classroom</span></div>
                 </div>
                 <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="classroom">
-                    <img src="class3.jpg" alt="Classroom View 3" onerror="this.src='https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600'" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <img src="class3.jpg" alt="Classroom 3" onerror="this.src='https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600'" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-blue-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"><span class="text-white font-black uppercase text-xs">Classroom</span></div>
+                </div>
+                <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="classroom">
+                    <img src="class4.jpg" alt="Classroom 4" onerror="this.src='https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=600'" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-blue-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"><span class="text-white font-black uppercase text-xs">Classroom</span></div>
+                </div>
+                <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="classroom">
+                    <img src="class5.jpg" alt="Classroom 5" onerror="this.src='https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600'" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
                     <div class="absolute inset-0 bg-blue-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"><span class="text-white font-black uppercase text-xs">Classroom</span></div>
                 </div>
 
-                <!-- Category: Events -->
+                <!-- Category: Events (5 slots) -->
                 <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="events">
-                    <img src="event1.jpg" alt="Event View 1" onerror="this.src='https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=600'" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <img src="event1.jpg" alt="Event 1" onerror="this.src='https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=600'" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
                     <div class="absolute inset-0 bg-blue-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"><span class="text-white font-black uppercase text-xs">Events</span></div>
                 </div>
                 <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="events">
-                    <img src="event2.jpg" alt="Event View 2" onerror="this.src='https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600'" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <img src="event2.jpg" alt="Event 2" onerror="this.src='https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600'" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
                     <div class="absolute inset-0 bg-blue-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"><span class="text-white font-black uppercase text-xs">Events</span></div>
                 </div>
                 <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="events">
-                    <img src="event3.jpg" alt="Event View 3" onerror="this.src='https://images.unsplash.com/photo-1523287562758-66c7fc58967f?w=600'" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <img src="event3.jpg" alt="Event 3" onerror="this.src='https://images.unsplash.com/photo-1523287562758-66c7fc58967f?w=600'" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-blue-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"><span class="text-white font-black uppercase text-xs">Events</span></div>
+                </div>
+                <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="events">
+                    <img src="event4.jpg" alt="Event 4" onerror="this.src='https://images.unsplash.com/photo-1475721027185-39a1294e55ee?w=600'" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-blue-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"><span class="text-white font-black uppercase text-xs">Events</span></div>
+                </div>
+                <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="events">
+                    <img src="event5.jpg" alt="Event 5" onerror="this.src='https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=600'" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
                     <div class="absolute inset-0 bg-blue-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"><span class="text-white font-black uppercase text-xs">Events</span></div>
                 </div>
 
-                <!-- Category: Achievements -->
+                <!-- Category: Achievements (5 slots) -->
                 <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="achievements">
-                    <img src="result1.jpg" alt="Achievement View 1" onerror="this.src='https://images.unsplash.com/photo-1523287562758-66c7fc58967f?w=600'" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <img src="result1.jpg" alt="Achievement 1" onerror="this.src='https://images.unsplash.com/photo-1523287562758-66c7fc58967f?w=600'" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
                     <div class="absolute inset-0 bg-blue-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"><span class="text-white font-black uppercase text-xs">Achievements</span></div>
                 </div>
                 <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="achievements">
-                    <img src="result2.jpg" alt="Achievement View 2" onerror="this.src='https://images.unsplash.com/photo-1543269865-cbf427effbad?w=600'" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <img src="result2.jpg" alt="Achievement 2" onerror="this.src='https://images.unsplash.com/photo-1543269865-cbf427effbad?w=600'" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
                     <div class="absolute inset-0 bg-blue-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"><span class="text-white font-black uppercase text-xs">Achievements</span></div>
                 </div>
                 <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="achievements">
-                    <img src="result3.jpg" alt="Achievement View 3" onerror="this.src='https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600'" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <img src="result3.jpg" alt="Achievement 3" onerror="this.src='https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600'" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-blue-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"><span class="text-white font-black uppercase text-xs">Achievements</span></div>
+                </div>
+                <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="achievements">
+                    <img src="result4.jpg" alt="Achievement 4" onerror="this.src='https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=600'" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-blue-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"><span class="text-white font-black uppercase text-xs">Achievements</span></div>
+                </div>
+                <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="achievements">
+                    <img src="result5.jpg" alt="Achievement 5" onerror="this.src='https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600'" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
                     <div class="absolute inset-0 bg-blue-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"><span class="text-white font-black uppercase text-xs">Achievements</span></div>
                 </div>
 
