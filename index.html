@@ -4,59 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!-- Google Search Console Verification -->
+    <!-- REPLACE THE LINE BELOW WITH THE TAG FROM GOOGLE SEARCH CONSOLE -->
+    <meta name="google-site-verification" content="PASTE_YOUR_GOOGLE_CODE_HERE" />
+    
     <!-- Favicon Logic -->
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/x-icon" href="favicon.ico?v=1">
+    <link rel="shortcut icon" href="favicon.ico?v=1" type="image/x-icon">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📐</text></svg>">
     
     <!-- SEO Meta Tags -->
     <title>Mathswaala | Best Maths Tuition in Thane | Science, Commerce, CBSE & ICSE</title>
     <meta name="description" content="Mathswaala offers expert Mathematics coaching for 8th-10th (CBSE, ICSE, State) and 11th-12th Science & Commerce in Balkum Dhokali, Thane. Guided by Mr. Pravin Nagendra Singh sir.">
     <meta name="keywords" content="Maths tuition Thane, Science Maths coaching Thane, Commerce Maths coaching Thane, CBSE Maths expert Thane, ICSE Maths specialist, 10th board maths coaching Balkum, Pravin Nagendra Singh sir">
-    <!-- Keep this as your final custom domain for GSC -->
     <link rel="canonical" href="https://www.mathswaala.com/" />
 
-    <!-- Social Media Meta Tags -->
+    <!-- Open Graph / Social Media Tags -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Mathswaala | Expert Mathematics Coaching in Thane">
     <meta property="og:description" content="Transforming Mathematics into a language of logic. Specialized 8th-12th coaching for Science and Commerce in Thane.">
     <meta property="og:url" content="https://www.mathswaala.com/">
     <meta property="og:image" content="classroom.jpg">
 
-    <!-- JSON-LD Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Mathswaala Mathematics Excellence Center",
-      "image": "classroom.jpg",
-      "@id": "",
-      "url": "https://www.mathswaala.com",
-      "telephone": "+919029807816",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Highland Residency, Balkum Dhokali Road",
-        "addressLocality": "Thane",
-        "postalCode": "400601",
-        "addressRegion": "Maharashtra",
-        "addressCountry": "IN"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 19.2272,
-        "longitude": 72.9844
-      },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
-        ],
-        "opens": "08:00",
-        "closes": "21:00"
-      }
-    }
-    </script>
-    
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -76,7 +45,6 @@
             background-position: center;
         }
 
-        /* RESTORED MATH NOTATION OVERLAY */
         .math-hero-pattern {
             position: absolute;
             inset: 0;
@@ -91,15 +59,7 @@
         }
 
         .topper-card { border-top: 4px solid #1e3a8a; border-bottom: 6px solid #facc15; }
-        .demo-pulse { animation: pulse-border 2s infinite; }
-        @keyframes pulse-border {
-            0% { box-shadow: 0 0 0 0 rgba(250, 204, 21, 0.7); }
-            70% { box-shadow: 0 0 0 10px rgba(250, 204, 21, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(250, 204, 21, 0); }
-        }
-
         .gallery-item { transition: all 0.4s ease; display: none; }
-        .gallery-item.hidden-img { display: none !important; }
         .filter-btn.active-filter { background-color: #1e3a8a; color: white; border-color: #1e3a8a; }
     </style>
 </head>
@@ -107,29 +67,27 @@
 
     <!-- Top Bar -->
     <div class="bg-blue-950 text-white py-2 px-4 text-xs hidden md:block border-b border-white/5">
-        <div class="container mx-auto flex justify-between items-center">
-            <address class="flex gap-6 not-italic font-medium">
-                <span class="flex items-center"><i class="fas fa-map-marker-alt mr-2 text-yellow-400"></i> Highland Residency, Balkum Dhokali, Thane - 400601</span>
-                <span class="flex items-center"><i class="fas fa-phone-alt mr-2 text-yellow-400"></i> <a href="tel:+919029807816" title="Call Mathswaala">90298 07816</a></span>
+        <div class="container mx-auto flex justify-between items-center font-bold uppercase tracking-widest">
+            <address class="flex gap-6 not-italic">
+                <span><i class="fas fa-map-marker-alt mr-2 text-yellow-400"></i> Balkum Dhokali, Thane</span>
+                <span><i class="fas fa-phone-alt mr-2 text-yellow-400"></i> 90298 07816</span>
             </address>
-            <div class="font-black text-yellow-400 uppercase tracking-widest">CBSE • ICSE • STATE • SCIENCE • COMMERCE</div>
+            <div>CBSE • ICSE • STATE • SCIENCE • COMMERCE</div>
         </div>
     </div>
 
     <!-- Navigation -->
     <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b-2 border-blue-900">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <div class="flex items-center">
-                <a href="/" class="text-3xl font-black text-blue-900 tracking-tighter uppercase" title="Mathswaala Home">Maths<span class="text-yellow-500">waala</span></a>
-            </div>
-            <div class="hidden lg:flex gap-8 items-center font-black text-[12px] text-blue-900 uppercase tracking-widest">
+            <a href="/" class="text-3xl font-black text-blue-900 uppercase">Maths<span class="text-yellow-500">waala</span></a>
+            <div class="hidden lg:flex gap-8 items-center font-black text-[11px] text-blue-900 uppercase tracking-widest">
                 <a href="#home" class="hover:text-yellow-500 transition">Home</a>
                 <a href="#about" class="hover:text-yellow-500 transition">About</a>
                 <a href="#toppers" class="hover:text-yellow-500 transition">Toppers</a>
                 <a href="#gallery" class="hover:text-yellow-500 transition">Gallery</a>
-                <a href="#admission" class="demo-pulse bg-yellow-400 px-6 py-2.5 rounded text-blue-900 transition-all uppercase font-bold">Free Demo Sat/Sun</a>
+                <a href="#admission" class="bg-yellow-400 px-6 py-2.5 rounded text-blue-900 transition-all uppercase font-bold">Free Demo Sat/Sun</a>
             </div>
-            <button class="lg:hidden text-2xl text-blue-900" onclick="toggleMenu()" aria-label="Toggle Menu"><i class="fas fa-bars"></i></button>
+            <button class="lg:hidden text-2xl text-blue-900" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
         </div>
         <div id="mobile-menu" class="hidden flex-col bg-blue-900 text-white p-6 space-y-4 lg:hidden font-bold uppercase text-xs tracking-widest">
             <a href="#home" onclick="toggleMenu()">Home</a>
@@ -142,14 +100,12 @@
 
     <!-- Hero Section -->
     <header id="home" class="hero-section min-h-[500px] flex items-center text-white text-center md:text-left px-4 overflow-hidden relative">
-        <!-- RESTORED PATTERN LAYER -->
         <div class="math-hero-pattern"></div>
-        
         <div class="container mx-auto relative z-10">
             <div class="max-w-4xl">
                 <div class="flex flex-wrap justify-center md:justify-start gap-2 mb-6 uppercase">
-                    <span class="board-tag">8th - 10th Specialists</span>
-                    <span class="board-tag">11th & 12th Science & Commerce</span>
+                    <span class="bg-blue-600 px-3 py-1 rounded text-[10px] font-bold">8th - 10th Specialists</span>
+                    <span class="bg-yellow-500 text-blue-900 px-3 py-1 rounded text-[10px] font-bold">11th & 12th Science & Commerce</span>
                 </div>
                 <h1 style="font-family: 'Inter', sans-serif;" class="text-4xl md:text-8xl font-black mb-6 leading-none tracking-tighter uppercase">
                     MASTER <span class="text-yellow-400">MATHS</span><br>8th to 12th.
@@ -158,7 +114,7 @@
                     Specialized coaching for Secondary & Higher Secondary Mathematics in Thane. We master the logic for school boards and calculations for 11th & 12th Science & Commerce Maths.
                 </p>
                 <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-5">
-                    <a href="#admission" class="bg-yellow-400 text-blue-950 font-black px-10 py-5 rounded hover:bg-white transition shadow-xl uppercase tracking-tighter">Join Free Demo Class</a>
+                    <a href="#admission" class="bg-yellow-400 text-blue-950 font-black px-10 py-5 rounded hover:bg-white transition shadow-xl uppercase">Join Free Demo Class</a>
                     <div class="flex items-center justify-center md:justify-start gap-4 px-8 py-5 bg-white/10 backdrop-blur-lg rounded border border-white/20 w-full sm:w-auto">
                         <i class="fas fa-phone-alt text-yellow-400 text-2xl"></i>
                         <span class="text-2xl font-black tracking-tight">90298 07816</span>
@@ -174,23 +130,19 @@
             <div class="flex flex-col lg:flex-row items-center gap-12 md:gap-16">
                 <div class="lg:w-1/2">
                     <h2 class="text-blue-900 text-sm font-black tracking-[0.3em] mb-4 uppercase">The Mathswaala Story</h2>
-                    <h3 class="text-3xl md:text-5xl font-black mb-6 text-blue-950 leading-tight tracking-tighter uppercase">
+                    <h3 class="text-3xl md:text-5xl font-black mb-6 text-blue-950 leading-tight uppercase">
                         Transforming Challenges into <span class="text-blue-600 underline decoration-yellow-400">Confidence.</span>
                     </h3>
                     <div class="space-y-6 text-gray-600 font-medium leading-relaxed text-sm md:text-base text-justify">
-                        <p>Established in 2010, <strong>Mathswaala</strong> was founded with a singular vision: to transform Mathematics from a daunting subject into a language of logic and confidence. Located at <strong>Highland Residency, Balkum Dhokali</strong>, we have become the go-to destination for parents seeking the best <strong>Maths tuition in Thane West</strong> for <strong>CBSE, ICSE & State Board</strong>.</p>
-                        
-                        <p>Guided by our founder, <strong>Mr. Pravin Nagendra Singh sir</strong> (seen here addressing a class), we provide specialized mentorship that spans from <strong>8th to 12th Standard</strong>. Mr. Singh helps students achieve success by simplifying complex financial mathematics, statistics, and calculus into intuitive concepts, ensuring a strong foundation for both school success and future professional careers.</p>
-                        
-                        <p>Our coaching methodology is specifically tailored for 8th, 9th, and 10th-grade students as well as <strong>11th/12th Science & Commerce</strong>. We don't just solve problems; we build the "why" behind every formula. Under Mr. Singh's dedicated guidance, students develop the self-study habits and critical thinking skills required to build exceptional scores and lifelong mathematical fluency.</p>
+                        <p>Established in 2010, <strong>Mathswaala</strong> was founded with a singular vision: to transform Mathematics from a daunting subject into a language of logic and confidence. Located at <strong>Highland Residency, Balkum Dhokali</strong>, we are the trusted coaching destination for <strong>CBSE, ICSE & State Board</strong>.</p>
+                        <p>Guided by our founder, <strong>Mr. Pravin Nagendra Singh sir</strong>, we provide specialized mentorship spanning from <strong>8th to 12th Standard</strong>. We help students achieve success by simplifying complex concepts for both <strong>Science and Commerce</strong> streams, ensuring a strong foundation for future professional careers.</p>
                     </div>
                 </div>
                 <div id="about-image-container" class="lg:w-1/2 relative hidden">
-                    <div class="relative z-10 rounded-[2rem] overflow-hidden shadow-2xl bg-gray-200 border border-gray-100">
-                        <img src="classroom.jpg" alt="Founder Mr. Pravin Singh sir teaching Mathematics at Mathswaala Thane" class="w-full h-auto object-cover border-4 border-white" onload="document.getElementById('about-image-container').classList.remove('hidden')">
-                        <div class="absolute bottom-0 left-0 right-0 bg-blue-900/90 text-white p-3 text-center text-[10px] font-black uppercase tracking-widest">Mr. Pravin Nagendra Singh sir addressing the class</div>
+                    <div class="relative z-10 rounded-[2rem] overflow-hidden shadow-2xl bg-gray-200">
+                        <img src="classroom.jpg" alt="Pravin Singh sir teaching" class="w-full h-auto object-cover border-4 border-white" onload="document.getElementById('about-image-container').classList.remove('hidden')">
                     </div>
-                    <div class="absolute -bottom-6 -right-6 w-32 h-32 md:w-64 md:h-64 bg-yellow-400 rounded-3xl -z-0 rotate-12"></div>
+                    <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-yellow-400 rounded-3xl -z-0 rotate-12"></div>
                 </div>
             </div>
         </div>
@@ -199,61 +151,56 @@
     <!-- Toppers Section -->
     <section id="toppers" class="py-16 md:py-24 bg-gray-50 border-b">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl md:text-5xl font-black text-blue-900 mb-12 text-center uppercase tracking-tighter">Our Elite <span class="text-yellow-500">Achievers.</span></h2>
+            <h2 class="text-4xl md:text-5xl font-black text-blue-900 mb-12 text-center uppercase">Our Elite <span class="text-yellow-500">Achievers.</span></h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Topper 1 -->
-                <div class="bg-white p-8 rounded-3xl shadow-xl topper-card text-center group card-hover">
-                    <div class="w-28 h-28 bg-blue-900 text-white rounded-full flex items-center justify-center mx-auto mb-6 text-3xl font-black border-4 border-yellow-400 overflow-hidden relative">
-                        <img src="topper1.jpg" alt="Sharwin Raorane" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500" onload="this.style.opacity='1'">
+                <div class="bg-white p-8 rounded-3xl shadow-xl topper-card text-center card-hover">
+                    <div class="w-28 h-28 bg-blue-900 rounded-full mx-auto mb-6 relative overflow-hidden border-4 border-yellow-400">
+                        <img src="topper1.jpg" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity" onload="this.style.opacity='1'">
                         <span class="absolute bottom-1 left-1/2 -translate-x-1/2 z-10 bg-white/95 text-blue-900 px-3 py-0.5 rounded-full text-sm font-black shadow-sm border border-blue-100">97.6%</span>
                     </div>
                     <h3 class="text-xl font-black text-blue-900 uppercase">Sharwin Raorane</h3>
-                    <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-2">DAV Public School • CBSE Topper</p>
+                    <p class="text-[10px] font-bold text-gray-400 uppercase mt-2">DAV Public School • CBSE Topper</p>
                 </div>
                 <!-- Topper 2 -->
-                <div class="bg-white p-8 rounded-3xl shadow-xl topper-card text-center group card-hover md:scale-105 border-t-8 border-blue-900">
-                    <div class="w-28 h-28 bg-blue-900 text-white rounded-full flex items-center justify-center mx-auto mb-6 text-3xl font-black border-4 border-yellow-400 overflow-hidden relative">
-                        <img src="topper2.jpg" alt="Shivansh Tiwari" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500" onload="this.style.opacity='1'">
+                <div class="bg-white p-8 rounded-3xl shadow-xl topper-card text-center card-hover md:scale-105 border-t-8 border-blue-900">
+                    <div class="w-28 h-28 bg-blue-900 rounded-full mx-auto mb-6 relative overflow-hidden border-4 border-yellow-400">
+                        <img src="topper2.jpg" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity" onload="this.style.opacity='1'">
                         <span class="absolute bottom-1 left-1/2 -translate-x-1/2 z-10 bg-white/95 text-blue-900 px-3 py-0.5 rounded-full text-sm font-black shadow-sm border border-blue-100">96.6%</span>
                     </div>
                     <h3 class="text-xl font-black text-blue-900 uppercase">Shivansh Tiwari</h3>
-                    <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-2">Sri Ma Vidyalaya • State Board</p>
+                    <p class="text-[10px] font-bold text-gray-400 uppercase mt-2">Sri Ma Vidyalaya • State Board</p>
                 </div>
                 <!-- Topper 3 -->
-                <div class="bg-white p-8 rounded-3xl shadow-xl topper-card text-center group card-hover">
-                    <div class="w-28 h-28 bg-blue-900 text-white rounded-full flex items-center justify-center mx-auto mb-6 text-3xl font-black border-4 border-yellow-400 overflow-hidden relative">
-                        <img src="topper3.jpg" alt="Nihal Suvarna" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500" onload="this.style.opacity='1'">
+                <div class="bg-white p-8 rounded-3xl shadow-xl topper-card text-center card-hover">
+                    <div class="w-28 h-28 bg-blue-900 rounded-full mx-auto mb-6 relative overflow-hidden border-4 border-yellow-400">
+                        <img src="topper3.jpg" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity" onload="this.style.opacity='1'">
                         <span class="absolute bottom-1 left-1/2 -translate-x-1/2 z-10 bg-white/95 text-blue-900 px-3 py-0.5 rounded-full text-sm font-black shadow-sm border border-blue-100">94.6%</span>
                     </div>
                     <h3 class="text-xl font-black text-blue-900 uppercase">Nihal Suvarna</h3>
-                    <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-2">Lok Puram School • ICSE Topper</p>
+                    <p class="text-[10px] font-bold text-gray-400 uppercase mt-2">Lok Puram School • ICSE Topper</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Inside the Learning Center -->
-    <section id="gallery" class="py-16 md:py-24 bg-white">
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 md:py-24 bg-white text-center">
         <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-black text-blue-900 uppercase tracking-tighter">Inside the <span class="text-yellow-500">Learning Center</span></h2>
-                <p class="mt-2 text-gray-400 text-[10px] font-bold uppercase tracking-[0.2em]">Excellence in Mathematics Environment - Thane</p>
-            </div>
-
+            <h2 class="text-3xl md:text-4xl font-black text-blue-900 uppercase mb-16 tracking-tighter">Inside the <span class="text-yellow-500">Learning Center</span></h2>
             <div class="flex flex-wrap justify-center gap-2 md:gap-4 mb-12">
-                <button onclick="filterGallery('all', this)" class="filter-btn active-filter px-6 py-2 rounded-full border-2 border-blue-900 font-black text-[10px] uppercase tracking-widest transition-all">All Photos</button>
-                <button onclick="filterGallery('classroom', this)" class="filter-btn px-6 py-2 rounded-full border-2 border-gray-200 font-black text-[10px] uppercase tracking-widest text-gray-400 transition-all hover:border-blue-900">Classroom</button>
-                <button onclick="filterGallery('events', this)" class="filter-btn px-6 py-2 rounded-full border-2 border-gray-200 font-black text-[10px] uppercase tracking-widest text-gray-400 transition-all hover:border-blue-900">Events</button>
-                <button onclick="filterGallery('achievements', this)" class="filter-btn px-6 py-2 rounded-full border-2 border-gray-200 font-black text-[10px] uppercase tracking-widest text-gray-400 transition-all hover:border-blue-900">Achievements</button>
+                <button onclick="filterGallery('all', this)" class="filter-btn active-filter px-6 py-2 rounded-full border-2 border-blue-900 font-black text-[10px] uppercase">All Photos</button>
+                <button onclick="filterGallery('classroom', this)" class="filter-btn px-6 py-2 rounded-full border-2 border-gray-200 font-black text-[10px] uppercase">Classroom</button>
+                <button onclick="filterGallery('events', this)" class="filter-btn px-6 py-2 rounded-full border-2 border-gray-200 font-black text-[10px] uppercase">Events</button>
+                <button onclick="filterGallery('achievements', this)" class="filter-btn px-6 py-2 rounded-full border-2 border-gray-200 font-black text-[10px] uppercase">Achievements</button>
             </div>
-
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="gallery-container">
-                <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="classroom"><img src="class1.jpg" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onload="this.parentElement.style.display='block'"></div>
-                <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="classroom"><img src="class2.jpg" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onload="this.parentElement.style.display='block'"></div>
-                <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="events"><img src="event1.jpg" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onload="this.parentElement.style.display='block'"></div>
-                <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="achievements"><img src="result1.jpg" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onload="this.parentElement.style.display='block'"></div>
-                <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="classroom"><img src="class3.jpg" class="w-full h-full object-cover" onload="this.parentElement.style.display='block'"></div>
-                <div class="gallery-item relative group overflow-hidden rounded-3xl aspect-square" data-cat="events"><img src="event2.jpg" class="w-full h-full object-cover" onload="this.parentElement.style.display='block'"></div>
+                <div class="gallery-item relative rounded-3xl aspect-square overflow-hidden" data-cat="classroom"><img src="class1.jpg" class="w-full h-full object-cover transition hover:scale-110 duration-500" onload="this.parentElement.style.display='block'"></div>
+                <div class="gallery-item relative rounded-3xl aspect-square overflow-hidden" data-cat="classroom"><img src="class2.jpg" class="w-full h-full object-cover transition hover:scale-110 duration-500" onload="this.parentElement.style.display='block'"></div>
+                <div class="gallery-item relative rounded-3xl aspect-square overflow-hidden" data-cat="events"><img src="event1.jpg" class="w-full h-full object-cover transition hover:scale-110 duration-500" onload="this.parentElement.style.display='block'"></div>
+                <div class="gallery-item relative rounded-3xl aspect-square overflow-hidden" data-cat="achievements"><img src="result1.jpg" class="w-full h-full object-cover transition hover:scale-110 duration-500" onload="this.parentElement.style.display='block'"></div>
+                <div class="gallery-item relative rounded-3xl aspect-square overflow-hidden" data-cat="classroom"><img src="class3.jpg" class="w-full h-full object-cover" onload="this.parentElement.style.display='block'"></div>
+                <div class="gallery-item relative rounded-3xl aspect-square overflow-hidden" data-cat="events"><img src="event2.jpg" class="w-full h-full object-cover" onload="this.parentElement.style.display='block'"></div>
             </div>
         </div>
     </section>
@@ -263,9 +210,9 @@
         <div class="container mx-auto px-4 max-w-6xl">
             <div class="bg-white/5 rounded-[2rem] border border-white/10 p-8 md:p-16 flex flex-col md:flex-row items-center gap-12">
                 <div class="md:w-5/12 text-center md:text-left">
-                    <h2 class="text-3xl md:text-5xl font-black mb-6 tracking-tighter uppercase">Join the <span class="text-yellow-400">Success.</span></h2>
+                    <h2 class="text-3xl md:text-5xl font-black mb-6 uppercase">Join the <span class="text-yellow-400">Success.</span></h2>
                     <p class="text-blue-100 mb-8 font-medium text-center md:text-justify">Free Demo lectures conducted every Saturday & Sunday in Balkum Dhokali.</p>
-                    <address class="space-y-4 not-italic font-bold text-sm uppercase flex flex-col items-center md:items-start">
+                    <address class="space-y-4 font-bold text-sm uppercase flex flex-col items-center md:items-start not-italic">
                         <div class="flex items-center gap-4"><i class="fas fa-phone-alt text-yellow-400"></i> 90298 07816</div>
                         <div class="flex items-center gap-4"><i class="fas fa-map-pin text-yellow-400"></i> Highland Residency, Balkum</div>
                     </address>
@@ -273,10 +220,10 @@
                 <div class="md:w-7/12 w-full">
                     <form id="admission-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-4">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <input type="text" name="Student Name" placeholder="Student Name" class="w-full p-4 bg-white border border-gray-200 rounded-xl text-blue-900 font-bold" required>
-                            <input type="tel" name="Mobile Number" placeholder="Mobile Number" class="w-full p-4 bg-white border border-gray-200 rounded-xl text-blue-900 font-bold" required>
+                            <input type="text" name="Student Name" placeholder="Student Name" class="w-full p-4 bg-white rounded-xl text-blue-900 font-bold" required>
+                            <input type="tel" name="Mobile Number" placeholder="Mobile Number" class="w-full p-4 bg-white rounded-xl text-blue-900 font-bold" required>
                         </div>
-                        <select name="Standard" class="w-full p-4 bg-white border border-gray-200 rounded-xl text-blue-900 font-bold" required>
+                        <select name="Standard" class="w-full p-4 bg-white rounded-xl text-blue-900 font-bold" required>
                             <option value="">Select Standard (8th - 12th)</option>
                             <option value="8th">8th Standard</option>
                             <option value="9th">9th Standard</option>
@@ -287,10 +234,7 @@
                             <option value="12th Commerce">12th Commerce (SYJC)</option>
                         </select>
                         <button type="submit" class="w-full bg-yellow-400 text-blue-900 font-black py-4 rounded-xl hover:bg-white transition uppercase shadow-xl">Book Free Demo Slot</button>
-                        
-                        <div id="form-success" class="hidden bg-green-500 text-white p-4 rounded-xl text-center font-bold">
-                            Thank you! Your request has been sent to our team's Gmail.
-                        </div>
+                        <div id="form-msg" class="hidden text-center bg-green-500 p-4 rounded-xl font-bold mt-4">Request Sent! Check your Gmail soon.</div>
                     </form>
                 </div>
             </div>
@@ -302,17 +246,17 @@
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto bg-gray-50 p-8 md:p-12 rounded-[2rem] shadow-sm flex flex-col md:flex-row items-center gap-8 md:gap-12 text-center md:text-left">
                 <div class="flex-1 w-full">
-                    <h3 class="text-2xl md:text-3xl font-black text-blue-900 mb-4 uppercase tracking-tighter">The Maths Hub</h3>
+                    <h3 class="text-2xl md:text-3xl font-black text-blue-900 mb-4 uppercase">The Maths Hub</h3>
                     <p class="text-gray-500 font-bold mb-6 italic text-sm md:text-base">G3, Bldg No. 3 & 5, Highland Residency,<br>Balkum Dhokali Road, Thane - 400601</p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                        <a href="tel:9029807816" class="w-full sm:w-auto flex items-center justify-center gap-3 bg-blue-900 text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-black hover:bg-yellow-400 hover:text-blue-900 transition shadow-lg text-sm md:text-base uppercase" title="Call for Admission"><i class="fas fa-phone-alt"></i> Call 90298 07816</a>
-                        <a href="https://wa.me/919029807816" class="w-full sm:w-auto flex items-center justify-center gap-3 border-2 border-green-500 text-green-600 px-6 md:px-8 py-3 md:py-4 rounded-full font-black hover:bg-green-500 hover:text-white transition text-sm md:text-base uppercase" title="WhatsApp Us"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                        <a href="tel:9029807816" class="w-full sm:w-auto flex items-center justify-center gap-3 bg-blue-900 text-white px-8 py-4 rounded-full font-black hover:bg-yellow-400 hover:text-blue-900 transition shadow-lg text-sm uppercase"><i class="fas fa-phone-alt"></i> Call 90298 07816</a>
+                        <a href="https://wa.me/919029807816" target="_blank" class="w-full sm:w-auto flex items-center justify-center gap-3 border-2 border-green-500 text-green-600 px-8 py-4 rounded-full font-black hover:bg-green-500 hover:text-white transition text-sm uppercase"><i class="fab fa-whatsapp"></i> WhatsApp</a>
                     </div>
                 </div>
                 <div class="w-32 h-32 md:w-48 md:h-48 bg-blue-50 rounded-full flex items-center justify-center shrink-0 border-8 border-white shadow-inner">
                     <div class="text-center">
-                        <div class="text-3xl md:text-4xl font-black text-blue-900 leading-none">16+</div>
-                        <div class="text-[8px] md:text-[9px] font-black uppercase tracking-widest text-gray-400 mt-2">Years of<br>Excellence</div>
+                        <div class="text-3xl font-black text-blue-900 leading-none">16+</div>
+                        <div class="text-[8px] font-black uppercase text-gray-400 mt-2">Years of Excellence</div>
                     </div>
                 </div>
             </div>
@@ -322,49 +266,43 @@
     <!-- Footer -->
     <footer class="bg-blue-950 text-white py-12 text-center">
         <div class="container mx-auto px-4">
-            <div class="text-3xl font-black uppercase tracking-widest mb-6">Maths<span class="text-yellow-400">waala</span></div>
-            <div class="flex justify-center flex-wrap gap-8 text-[10px] font-black uppercase tracking-widest text-blue-200 mb-10">
-                <a href="#home" class="hover:text-yellow-400 transition">Home</a>
-                <a href="#about" class="hover:text-yellow-400 transition">About</a>
-                <a href="#toppers" class="hover:text-yellow-500 transition">Toppers</a>
-                <a href="#gallery" class="hover:text-yellow-400 transition">Gallery</a>
-            </div>
+            <div class="text-3xl font-black uppercase mb-6">Maths<span class="text-yellow-400">waala</span></div>
             <p class="text-[9px] text-blue-400 font-bold tracking-widest uppercase mt-12 pb-4">
                 &copy; 2026 Mathswaala Excellence Center • Established 2010 • Thane West
             </p>
         </div>
     </footer>
 
-    <!-- Mobile Floating Controls -->
-    <div class="fixed bottom-6 right-6 z-50"><a href="https://wa.me/919029807816" class="bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform"><i class="fab fa-whatsapp text-3xl"></i></a></div>
+    <!-- WhatsApp Floating Controls -->
+    <div class="fixed bottom-6 right-6 z-50"><a href="https://wa.me/919029807816" target="_blank" class="bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform"><i class="fab fa-whatsapp text-3xl"></i></a></div>
 
     <script>
-        function toggleMenu() { document.getElementById('mobile-menu').classList.toggle('hidden'); document.getElementById('mobile-menu').classList.toggle('flex'); }
+        function toggleMenu() { document.getElementById('mobile-menu').classList.toggle('hidden'); }
         
         function filterGallery(cat, btn) {
-            const items = document.querySelectorAll('.gallery-item');
-            const btns = document.querySelectorAll('.filter-btn');
-            
-            btns.forEach(b => {
-                b.classList.remove('active-filter', 'border-blue-900', 'text-blue-900');
-                b.classList.add('border-gray-200', 'text-gray-400');
-            });
-            if(btn) {
-                btn.classList.add('active-filter', 'border-blue-900', 'text-blue-900');
-                btn.classList.remove('border-gray-200', 'text-gray-400');
-            }
-
-            items.forEach(item => {
-                const img = item.querySelector('img');
-                if (img.complete && img.naturalHeight !== 0) {
-                    if (cat === 'all' || item.getAttribute('data-cat') === cat) {
-                        item.style.display = 'block';
-                    } else {
-                        item.style.display = 'none';
-                    }
-                }
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active-filter', 'border-blue-900'));
+            btn.classList.add('active-filter', 'border-blue-900');
+            document.querySelectorAll('.gallery-item').forEach(item => {
+                item.style.display = (cat === 'all' || item.getAttribute('data-cat') === cat) ? 'block' : 'none';
             });
         }
+        
+        const form = document.getElementById('admission-form');
+        form.addEventListener("submit", async function(e) {
+            e.preventDefault();
+            if(form.action.includes("YOUR_FORM_ID")) {
+                alert("Please replace 'YOUR_FORM_ID' in the code with your actual Formspree ID!");
+                return;
+            }
+            const data = new FormData(form);
+            const response = await fetch(form.action, { method: 'POST', body: data, headers: { 'Accept': 'application/json' } });
+            if (response.ok) {
+                document.getElementById('form-msg').classList.remove('hidden');
+                form.reset();
+            } else {
+                alert("Submission failed. Please call 90298 07816 directly.");
+            }
+        });
     </script>
 </body>
 </html>
